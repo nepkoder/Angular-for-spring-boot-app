@@ -1,0 +1,37 @@
+<br>
+<br>
+<br>
+
+<h2 class="text-center">Add new person !!</h2>
+<br>
+<form >
+  <div class="form-group">
+    <!-- <label for="name">Name</label> -->
+    <input type="text" class="form-control" ngModel name="name" placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <input type="text" ngModel name="address" class="form-control" placeholder="Enter Address">
+  </div>
+
+
+  <div class="form-group">
+    <input type="email" class="form-control" ngModel name="email" placeholder="Enter email">
+  </div>
+
+  <div class="form-group">
+    <input type="text" ngModel name="phone" class="form-control" placeholder="Enter phone">
+  </div>
+
+  <div class="form-group">
+    <label class="form-inline">Status: &nbsp;
+    <div class="form-control">
+      <input type="checkbox" ngModel name="active"> Active &nbsp;
+      <input type="checkbox" ngModel name="active"> Inactive
+    </div>
+  </label>
+  </div>
+
+  <button class="btn btn-success" type="submit">Submit</button>
+  <a routerLink="/list" class="btn btn-danger">Cancel</a>
+
+</form>
